@@ -887,3 +887,11 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
+    override
+    class main
+    user radio
+    socket ims_datad stream 0660 system radio
+    group radio wifi inet vendor_qti_diag log
+    disabled
