@@ -162,3 +162,8 @@ ro.launcher.blur.appLaunch=0
 
 # Disable Remote Keguard animation
 persist.wm.enable_remote_keyguard_animation=0
+
+# ZRAM writeback
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
