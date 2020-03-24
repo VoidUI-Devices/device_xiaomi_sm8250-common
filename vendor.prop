@@ -105,6 +105,9 @@ vendor.audio_hal.period_multiplier=2
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
+# Audio (Dolby)
+debug.stagefright.omx_default_rank.sw-audio=16
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
