@@ -196,6 +196,17 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libvolumelistener
 
+# Audio Motodolby
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
+    persist.vendor.audio_fx.current=dolby \
+    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+
+# Audio Motodolby Config
+PRODUCT_COPY_FILES += \
+    device/xiaomi/sm8250-common/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
