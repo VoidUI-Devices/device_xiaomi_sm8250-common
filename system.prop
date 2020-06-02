@@ -111,3 +111,6 @@ ro.miui.notch=1
 
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
+
+#Battery Property
+ro.charger.enable_suspend = 1
