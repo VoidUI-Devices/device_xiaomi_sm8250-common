@@ -16,6 +16,7 @@ android_app {
 
     static_libs: [
         "org.pixelexperience.settings.resources",
+        "SettingsLib",
     ],
 
     optimize: {
