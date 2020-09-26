@@ -237,6 +237,7 @@ persist.vendor.radio.efssync=true
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.ignore_dom_time=10
+persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.process_sups_ind=1
 persist.vendor.radio.rat_on=combine
