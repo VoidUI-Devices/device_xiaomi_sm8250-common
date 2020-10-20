@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 The LineageOS Project
+     Copyright (C) 2023 VoidUI Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -11,8 +11,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<androidx.recyclerview.widget.RecyclerView
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     android:id="@+id/refresh_rv_view"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content" />
+<resources>
+    <!-- Touch profiles -->
+    <integer name="smoothness_default">0</integer>
+    <integer name="smoothness_min">0</integer>
+    <integer name="smoothness_max">3</integer>
+</resources>
