@@ -17,6 +17,7 @@ android_app {
     static_libs: [
         "org.pixelexperience.settings.resources",
         "SettingsLib",
+        "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
     ],
 
     optimize: {
