@@ -493,6 +493,12 @@ PRODUCT_PACKAGES += \
     fstab.qcom_ramdisk \
     ueventd.qcom.rc
 
+# F2FS
+PRODUCT_PACKAGES += \
+    sg_write_buffer \
+    f2fs_io \
+    check_f2fs
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
