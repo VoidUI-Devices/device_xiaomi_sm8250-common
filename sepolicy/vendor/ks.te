@@ -1,0 +1,5 @@
+type ks, domain;
+type ks_exec, exec_type, vendor_file_type, file_type;
+
+net_domain(ks)
+init_daemon_domain(ks)
