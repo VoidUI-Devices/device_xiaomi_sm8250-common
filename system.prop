@@ -114,3 +114,6 @@ debug.cpurend.vsync=false
 
 #Battery Property
 ro.charger.enable_suspend = 1
+
+#Disable MTE Async for system server
+arm64.memtag.process.system_server=off
