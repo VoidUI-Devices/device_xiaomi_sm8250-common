@@ -119,6 +119,7 @@ vendor.qcom.bluetooth.soc=hastings
 
 # Camera
 persist.vendor.camera.perflock.enable=0
+persist.vendor.camera.logInfoMask=false
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
