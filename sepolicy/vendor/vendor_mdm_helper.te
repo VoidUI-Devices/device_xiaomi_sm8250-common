@@ -4,3 +4,6 @@ allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file rw_file_perms;
 get_prop(vendor_mdm_helper, vendor_ssr_prop)
 
 wakelock_use(vendor_mdm_helper)
+
+# Needed to allow boot over PCIe
+allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
