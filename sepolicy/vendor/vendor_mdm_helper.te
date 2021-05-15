@@ -10,3 +10,7 @@ wakelock_use(vendor_mdm_helper)
 
 # Needed to allow boot over PCIe
 allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
+
+#Needed by ks in order to access the efs sync partitions
+allow vendor_mdm_helper block_device:dir r_dir_perms;
+allow vendor_mdm_helper efs_boot_device:blk_file r_file_perms;
