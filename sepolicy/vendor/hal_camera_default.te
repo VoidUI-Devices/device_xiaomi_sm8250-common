@@ -9,6 +9,9 @@ r_dir_file(hal_camera_default, camera_persist_file)
 r_dir_file(hal_camera_default, mnt_vendor_file)
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
 
+# Allow hal_camera_default to read /dev/adsprpc-smd-secure 
+allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
+
 allow hal_camera_default remosaic_daemon_service:service_manager find;
 
 allow hal_camera_default proc_stat:file read;
