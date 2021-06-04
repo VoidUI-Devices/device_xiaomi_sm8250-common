@@ -15,7 +15,7 @@ debug.force_no_blanking=true
 persist.vendor.cne.feature=1
 
 # DPM
-persist.vendor.dpm.feature=1
+persist.vendor.dpm.feature=11
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
