@@ -317,3 +317,6 @@ persist.sys.binary_xml=false
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# WFD
+debug.sf.enable_hwc_vds=1
