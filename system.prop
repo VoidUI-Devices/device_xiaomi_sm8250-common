@@ -16,6 +16,7 @@ tunnel.audio.encode=true
 # Bluetooth
 persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
+persist.vendor.bt.a2dp.hal.implementation=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 
