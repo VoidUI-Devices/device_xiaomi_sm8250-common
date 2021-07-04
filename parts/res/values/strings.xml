@@ -93,4 +93,8 @@
     <string name="music_headset_scenario_video">Video</string>
     <string name="music_headset_scenario_vocal">Voice</string>
 
+    <!-- High Touch Polling -->
+    <string name="htsr_title">Touch Responsiveness</string>
+    <string name="htsr_enable_title">Increase Touch Responsiveness</string>
+    <string name="htsr_enable_summary">Increases touch polling rate to decrease latency</string>    
 </resources>
