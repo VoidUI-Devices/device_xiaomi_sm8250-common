@@ -51,6 +51,11 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
 
+# Live Display
+/vendor/bin/hw/android\.hardware\.lights-service\.alioth                u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.alioth        u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/sys/class/drm/card0/card0-DSI-1/disp_param                             u:object_r:vendor_sysfs_graphics:s0
+ 
 # Health
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?         u:object_r:sysfs_wireless_supply:s0
 
