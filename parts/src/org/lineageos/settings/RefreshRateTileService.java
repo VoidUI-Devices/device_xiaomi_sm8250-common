@@ -28,6 +28,7 @@ import java.util.Locale;
 
 public class RefreshRateTileService extends TileService {
     private static final String KEY_MIN_REFRESH_RATE = "min_refresh_rate";
+    private static final String KEY_PREFERRED_REFRESH_RATE = "preferred_refresh_rate";
     private static final String KEY_PEAK_REFRESH_RATE = "peak_refresh_rate";
 
     private Context context;
@@ -73,6 +74,7 @@ public class RefreshRateTileService extends TileService {
 
         float rate = availableRates.get(activeRateMin);
         Settings.System.putFloat(context.getContentResolver(), KEY_MIN_REFRESH_RATE, rate);
+        Settings.System.putFloat(context.getContentResolver(), KEY_PREFERRED_REFRESH_RATE, rate);
         Settings.System.putFloat(context.getContentResolver(), KEY_PEAK_REFRESH_RATE, rate);
     }
 
