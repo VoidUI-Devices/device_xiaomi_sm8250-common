@@ -304,6 +304,12 @@ service vendor.nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw oem_2901
     oneshot
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 on property:init.svc.vendor.nv_mac=stopped
     start vendor.btmac-sh
 
