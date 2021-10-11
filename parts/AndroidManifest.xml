@@ -38,7 +38,7 @@
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -56,7 +56,8 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title">
+            android:label="@string/ambient_display_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -89,6 +90,7 @@
         <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:label="@string/clear_speaker_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -104,6 +106,7 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -128,6 +131,7 @@
             android:name=".RefreshRateTileService"
             android:icon="@drawable/ic_qs_refresh_rate"
             android:label="@string/refresh_rate_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
@@ -138,6 +142,7 @@
             android:name=".thermal.ThermalTileService"
             android:icon="@drawable/ic_thermal"
             android:label="@string/thermal_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
