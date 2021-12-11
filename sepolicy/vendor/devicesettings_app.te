@@ -1,6 +1,10 @@
 allow devicesettings_app vendor_sysfs_graphics:file write;
 r_dir_file(devicesettings_app, vendor_sysfs_graphics)
 
+# Allow devicesettings_app to operate with vendor_sysfs_graphics
+allow devicesettings_app vendor_sysfs_graphics:dir search;
+allow devicesettings_app vendor_sysfs_graphics:file rw_file_perms;
+
 # Allow devicesettings_app to find hal_touchfeature_xiaomi_hwservice
 allow devicesettings_app hal_touchfeature_xiaomi_hwservice:hwservice_manager find;
 
