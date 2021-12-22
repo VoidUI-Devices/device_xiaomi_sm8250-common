@@ -25,7 +25,7 @@
     </hal>
     <hal format="hidl" optional="false">
         <name>android.hidl.manager</name>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>IServiceManager</name>
             <instance>default</instance>

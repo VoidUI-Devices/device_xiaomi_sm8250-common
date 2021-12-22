@@ -5,7 +5,7 @@
 //
 
 cc_library_shared {
-    name: "android.hidl.base@1.0",
+    name: "android.hidl.base@1.2",
     shared_libs: ["libhidlbase"],
     system_ext_specific: true,
     vendor_available: true,
