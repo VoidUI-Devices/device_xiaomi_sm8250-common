@@ -202,6 +202,9 @@ vendor.power.pasr.enabled=false
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.rcs.supported=1
