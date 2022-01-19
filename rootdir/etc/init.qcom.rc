@@ -823,11 +823,6 @@ service vendor.LKCore-rel /vendor/bin/LKCore
     user system
     group system log diag
 
-service esepmdaemon /system/vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
 on charger
     start qcom-post-boot
     wait /dev/block/bootdevice/by-name/system
