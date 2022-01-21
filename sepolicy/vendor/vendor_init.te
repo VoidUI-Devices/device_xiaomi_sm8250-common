@@ -3,6 +3,7 @@ set_prop(vendor_init, vendor_fod_prop)
 set_prop(vendor_init, vendor_motor_prop)
 set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_video_prop)
+set_prop(vendor_init, vendor_radio_prop)
 
 allow vendor_init {
   vendor_debugfs_clk
