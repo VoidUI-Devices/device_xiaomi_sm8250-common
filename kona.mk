@@ -241,6 +241,11 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
+    libtinyxml.vendor \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.5 \
