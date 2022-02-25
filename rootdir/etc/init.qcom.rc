@@ -284,7 +284,7 @@ on post-fs-data
     mkdir /data/vendor/ramdump/bluetooth 0770 bluetooth bluetooth
 
     # Create the directories used by the Wireless subsystem
-    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/sockets 0770 wifi wifi
     mkdir /data/vendor/wifi/hostapd 0770 wifi wifi
     mkdir /data/vendor/wifi/hostapd/ctrl 0770 wifi wifi
@@ -293,6 +293,7 @@ on post-fs-data
     mkdir /data/vendor/wifi/wigig_hostapd 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+    mkdir /data/vendor/bluedroid 0771 bluetooth bluetooth
 
     # Create the directories used by WiGig Sensing
     mkdir /data/vendor/sensing 0770 system wifi
