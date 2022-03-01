@@ -35,4 +35,11 @@
     <!-- Raise to wake strings-->
     <string name="raise_to_wake_gesture_title">Raise to wake</string>
     <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
+
+    <!-- Refresh Rate -->
+    <string name="refresh_title">Refresh Rate per-app</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">Standard (60Hz)</string>    
+    <string name="refresh_extreme">Extreme (120Hz)</string>    
 </resources>
