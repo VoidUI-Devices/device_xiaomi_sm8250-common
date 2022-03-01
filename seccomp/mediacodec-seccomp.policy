@@ -17,3 +17,5 @@ ueventd: 1
 timer_create: 1
 timer_settime: 1
 rt_sigtimedwait: 1
+readlink: 1
+open: 1
