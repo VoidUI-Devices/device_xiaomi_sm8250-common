@@ -25,3 +25,6 @@ type thermal_data_file, file_type, data_file_type;
 type ultrasound_device, dev_type;
 
 type vendor_sysfs_iio, fs_type, sysfs_type;
+
+# Data files
+type per_boot_file, file_type, data_file_type, core_data_file_type;

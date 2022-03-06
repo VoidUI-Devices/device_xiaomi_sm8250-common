@@ -4,3 +4,6 @@ userdebug_or_eng(`
 ')
 # Ignore the socket if it fails to create
 dontaudit kernel self:qipcrtr_socket create;
+
+# Data files
+allow kernel per_boot_file:file r_file_perms;
