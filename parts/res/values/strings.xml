@@ -30,10 +30,10 @@
     <!-- Refresh Rate Settings -->
     <string name="refresh_rate_tile_title">Refresh Rate</string>
 
-    <!-- Refresh Rate -->
-    <string name="refresh_title">Refresh Rate per-app</string>
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Per-app refresh rate</string>
     <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
     <string name="refresh_default">Default</string>
-    <string name="refresh_standard">Standard (60Hz)</string>    
-    <string name="refresh_extreme">Extreme (120Hz)</string>    
+    <string name="refresh_standard">60Hz</string>    
+    <string name="refresh_extreme">120Hz</string>    
 </resources>
