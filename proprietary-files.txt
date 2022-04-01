@@ -770,6 +770,9 @@ vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
 
+# Service Tracker QTI
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+
 # Snapdragon Computer Vision Engine
 vendor/lib/libscveCommon.so
 vendor/lib/libscveCommon_stub.so
