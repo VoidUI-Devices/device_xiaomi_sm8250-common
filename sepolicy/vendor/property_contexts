@@ -51,6 +51,14 @@ persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_p
 # Motor
 persist.vendor.motor.                           u:object_r:vendor_motor_prop:s0
 
+# IMEI
+ro.vendor.oem.imei                              u:object_r:deviceid_prop:s0
+ro.vendor.oem.imei1                             u:object_r:deviceid_prop:s0
+ro.vendor.oem.imei2                             u:object_r:deviceid_prop:s0
+ro.vendor.oem.meid                              u:object_r:deviceid_prop:s0
+ro.vendor.oem.sno                               u:object_r:deviceid_prop:s0
+ro.vendor.oem.psno                              u:object_r:deviceid_prop:s0
+
 # RIL
 ro.vendor.ril                                   u:object_r:vendor_public_vendor_default_prop:s0
 vendor.ril.                                     u:object_r:vendor_radio_prop:s0
