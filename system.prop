@@ -42,6 +42,9 @@ vendor.iop.enable_uxe=0
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# RIL
+persist.sys.fflag.override.settings_provider_model=false
+
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
