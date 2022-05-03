@@ -30,6 +30,10 @@ ro.vendor.qti.va_aosp.support=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# VulkanAPI
+graphics.gpu.profiler.support=true
+graphics.gpu.profiler.vulkan_layer_apk=com.google.pixel.redbull.gpuprofiling.vulkanlayer
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1

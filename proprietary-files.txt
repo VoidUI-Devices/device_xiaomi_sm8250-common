@@ -309,6 +309,9 @@ vendor/lib64/libgsl.so|4fc49e2fb38b7f79e9026ad86db4a84bded2dec1
 vendor/lib64/libllvm-glnext.so|9a67215899a28ee769e68306d0443c43bbb227a7
 vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
 
+# Graphics (Vulkan Overlays) - from redfin-user-12-S3B1.220318.003-8372304-release-keys
+-vendor/app/gpu_profiling_vulkan_layer/gpu_profiling_vulkan_layer.apk;PRESIGNED|11125c9e335a764d5d5dcbb23f805513
+
 # Graphics (Adreno firmware)
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
