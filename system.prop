@@ -30,9 +30,10 @@ ro.vendor.qti.va_aosp.support=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# SkiaVK
-debug.renderengine.backend=threaded
-debug.hwui.renderer=skiavk
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true 
 
 # VulkanAPI
 graphics.gpu.profiler.support=true
