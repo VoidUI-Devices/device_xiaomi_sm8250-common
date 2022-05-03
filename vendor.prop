@@ -199,6 +199,9 @@ persist.sys.oem.otg_support=true
 # PASR
 vendor.power.pasr.enabled=false
 
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
