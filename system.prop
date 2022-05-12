@@ -41,3 +41,6 @@ persist.vendor.radio.report_codec=1
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
