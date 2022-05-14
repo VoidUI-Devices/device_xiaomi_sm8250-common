@@ -1,6 +1,3 @@
-Common_CFlags = ["-Wall"]
-Common_CFlags += ["-Werror"]
-
 cc_library_shared {
     name: "libxiaomivibratoreffect",
     vendor: true,
