@@ -1,9 +1,11 @@
 # Audio
+av.offload.enable=true
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
 tunnel.audio.encode=true
-vendor.audio.offload.buffer.size.kb=256
+audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
+vendor.voice.path.for.pcm.voip=true
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
 persist.audio.fluence.speaker=true
@@ -12,14 +14,34 @@ persist.audio.fluence.voicerec=false
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
 tunnel.audio.encode=true
+use.voice.path.for.pcm.voip=true
+audio.sys.mute.latency.factor=2
+audio.sys.noisy.broadcast.delay=500
+audio.sys.offload.pstimeout.secs=3
+audio.sys.routing.latency=0
 
 # Bluetooth
+bt.max.hfpclient.connections=1
 persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.btstack.absvolfeature=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc
+persist.vendor.btstack.connect.peer_earbud=false
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.enable.swb=false
+persist.vendor.btstack.enable.swbpm=false
+ro.bluetooth.emb_wp_mode=false
+persist.vendor.qcom.bluetooth.enable.swb=false
+persist.vendor.qcom.bluetooth.enable.swbpm=false
 ro.bluetooth.library_name=libbluetooth_qti.so
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+vendor.bluetooth.soc=hastings
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
@@ -81,16 +103,25 @@ vendor.iop.enable_uxe=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.audio.deep=false
 
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
+ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187
+ro.netflix.signup=1
 
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
 ro.vendor.qti.core_ctl_min_cpu=2
+
+# Printk
+persist.vendor.console.silent.config=1
+
+# Qcom
+qcom.hw.aac.encoder=true
 
 # Radio
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
@@ -102,6 +133,13 @@ persist.rcs.otp_sms_port=0
 # Netmgr
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
+
+# Mi
+ro.mi.development=false
+ro.opa.eligible_device=true
+
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE

@@ -32,7 +32,7 @@ ro.vendor.audio.us.proximity=true
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
 ro.vendor.audio.voice.change.youme.support=true
-vendor.audio.adm.buffering.ms=2
+vendor.audio.adm.buffering.ms=6
 vendor.audio.capture.enforce_legacy_copp_sr=true
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -57,8 +57,8 @@ vendor.audio.feature.external_speaker.enable=false
 vendor.audio.feature.external_speaker_tfa.enable=false
 vendor.audio.feature.fluence.enable=true
 vendor.audio.feature.fm.enable=true
-vendor.audio.feature.hdmi_edid.enable=true
-vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hdmi_edid.enable=false
+vendor.audio.feature.hdmi_passthrough.enable=false
 vendor.audio.feature.hfp.enable=true
 vendor.audio.feature.hifi_audio.enable=false
 vendor.audio.feature.hwdep_cal.enable=false
@@ -95,9 +95,62 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
-vendor.audio_hal.period_multiplier=2
+vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=240
 vendor.voice.path.for.pcm.voip=true
+vendor.audio.offload.buffer.size.kb=256
+
+# Audio - Stock
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=1
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+persist.sys.mms.bg_apps_limit=96
+persist.sys.mms.kill_fas_cached_idle=false
+persist.sys.mms.use_legacy=true
+persist.sys.usb.config=none
+ro.af.client_heap_size_kbyte=7168
+ro.com.android.dataroaming=false
+ro.vendor.radio.features_common=3
+ro.vendor.audio.afe.record=true
+ro.vendor.audio.aiasst.support=true
+ro.vendor.audio.camera.loopback.support=true
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dump.mixer=false
+ro.vendor.audio.enhance.support=false
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.karaok.support=true
+ro.vendor.audio.miui.karaoke.show=false
+ro.vendor.audio.multiroute=true
+ro.vendor.audio.ns.support=false
+ro.vendor.audio.sfx.audiovisual=false
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.pangaea=1
+ro.vendor.audio.soundtrigger.snr=16
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.vop.level=10
+ro.vendor.audio.soundtrigger.xatx.cnn.level=45
+ro.vendor.audio.soundtrigger.xatx.gmm.level=25
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.vop.level=-10
+ro.vendor.audio.spk.clean=true
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.us.type=mius
+ro.vendor.audio.zoom.support=true
+ro.vendor.audio.zoom.type=1
+ro.vendor.df.effect.conflict=1
+vendor.audio.feature.compr_voip.enable=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
@@ -106,7 +159,7 @@ persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2-lhdc
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
@@ -153,6 +206,9 @@ vendor.display.use_smooth_motion=0
 # DRM
 drm.service.enabled=true
 
+# Extras
+qemu.hw.mainkeys=0
+
 # Fingerprint
 persist.vendor.qfp=false
 
@@ -190,6 +246,10 @@ ro.hardware.keystore_desede=true
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
+# Miui-Extras
+ro.miui.google.csp=true
+ro.miui.notch=1
+
 # NFC
 ro.camera.notify_nfc=1
 
@@ -199,14 +259,8 @@ persist.sys.oem.otg_support=true
 # PASR
 vendor.power.pasr.enabled=false
 
-# Multi-gen LRU
-persist.device_config.mglru_native.lru_gen_config=all
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-
-# Printk
-persist.vendor.console.silent.config=1
 
 # Radio
 persist.radio.multisim.config=dsds
