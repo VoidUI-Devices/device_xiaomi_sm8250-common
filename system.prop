@@ -142,9 +142,6 @@ ro.opa.eligible_device=true
 # Multi-gen LRU
 persist.device_config.mglru_native.lru_gen_config=all
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
