@@ -120,9 +120,6 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Printk
 persist.vendor.console.silent.config=1
 
-# Qcom
-qcom.hw.aac.encoder=true
-
 # Radio
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
