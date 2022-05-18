@@ -126,7 +126,6 @@ ro.vendor.audio.karaok.support=true
 ro.vendor.audio.miui.karaoke.show=false
 ro.vendor.audio.multiroute=true
 ro.vendor.audio.ns.support=false
-ro.vendor.audio.sfx.audiovisual=false
 ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
 ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
@@ -141,9 +140,7 @@ ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
 ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
 ro.vendor.audio.soundtrigger.xanzn.vop.level=10
 ro.vendor.audio.soundtrigger.xatx.cnn.level=45
-ro.vendor.audio.soundtrigger.xatx.gmm.level=25
 ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
-ro.vendor.audio.soundtrigger.xatx.vop.level=-10
 ro.vendor.audio.spk.clean=true
 ro.vendor.audio.spk.stereo=true
 ro.vendor.audio.us.type=mius
@@ -290,7 +287,6 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.display.idle_time=1100
-debug.sf.frame_rate_multiple_threshold=120
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
