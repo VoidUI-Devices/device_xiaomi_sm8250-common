@@ -262,7 +262,7 @@ service vendor.lowi /vendor/bin/sscrpcd
    class core
    user system
    group system wakelock
-   capabilities BLOCK_SUSPEND
+   disabled
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
