@@ -253,7 +253,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
       <endpoint_type id="other">
@@ -271,7 +271,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
     </data>
@@ -320,7 +320,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
       <endpoint_type id="other">
@@ -338,7 +338,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
     </data>
@@ -387,7 +387,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
       <endpoint_type id="other">
@@ -405,7 +405,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
     </data>
@@ -454,7 +454,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
       <endpoint_type id="other">
@@ -472,7 +472,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
     </data>
@@ -521,7 +521,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
       <endpoint_type id="other">
@@ -539,7 +539,7 @@
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
-        <bass-enhancer-enable value="false"/>
+        <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
       </endpoint_type>
     </data>
