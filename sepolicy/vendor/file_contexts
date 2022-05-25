@@ -69,6 +69,10 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
 
+# Live Display
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service-sdm                u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_kona       u:object_r:hal_lineage_livedisplay_qti_exec:s0
+
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
 

@@ -335,6 +335,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.1-service.xiaomi_kona
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
