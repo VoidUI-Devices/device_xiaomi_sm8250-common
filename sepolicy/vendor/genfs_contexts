@@ -14,6 +14,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu6-cpu-l3-lat                   
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                                           u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                 u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                         u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary                                   u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                               u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                  u:object_r:vendor_sysfs_graphics:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare         u:object_r:vendor_sysfs_fingerprint:s0
