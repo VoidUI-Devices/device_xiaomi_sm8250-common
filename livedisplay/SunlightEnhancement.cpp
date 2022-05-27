@@ -29,7 +29,7 @@ namespace V2_1 {
 namespace implementation {
 
 static constexpr const char* kHbmStatusPath =
-        "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm";
+        "/sys/class/drm/card0/card0-DSI-1/disp_param";
 
 Return<bool> SunlightEnhancement::isEnabled() {
     std::string buf;
@@ -41,7 +41,7 @@ Return<bool> SunlightEnhancement::isEnabled() {
 }
 
 Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
-    if (!android::base::WriteStringToFile((enabled ? "1" : "0"), kHbmStatusPath)) {
+    if (!android::base::WriteStringToFile((enabled ? "0x20000" : "0xE0000"), kHbmStatusPath)) {
         LOG(ERROR) << "Failed to write " << kHbmStatusPath;
         return false;
     }
