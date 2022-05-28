@@ -1,1 +1,3 @@
+get_prop(system_app, settingslib_prop)
+
 hal_client_domain(system_app, hal_mlipay)
