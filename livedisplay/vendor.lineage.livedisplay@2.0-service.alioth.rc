@@ -1,7 +1,0 @@
-on boot
-    chown system system /sys/class/drm/card0/card0-DSI-1/disp_param
-
-service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.alioth
-    class hal
-    user system
-    group system
