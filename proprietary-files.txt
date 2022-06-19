@@ -822,11 +822,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soter service (Tencent)
 -vendor/app/SoterService/SoterService.apk
 
-# Thermal
-vendor/bin/mi_thermald
-vendor/etc/init/init.mi_thermald.rc
-
-
 # Time services
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
