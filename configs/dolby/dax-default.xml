@@ -225,7 +225,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="4"/>
         <dialog-enhancer-ducking value="0"/>
-        <peak-value value="240" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="18"/>
         <volmax-boost value="17"/>
@@ -292,7 +292,7 @@
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="5"/>
         <dialog-enhancer-ducking value="0"/>
-        <peak-value value="241" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="32"/>
@@ -359,7 +359,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
-        <peak-value value="241" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="16"/>
@@ -426,7 +426,7 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="0"/>
-        <peak-value value="241" />
+        <peak-value value="256" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="16"/>
