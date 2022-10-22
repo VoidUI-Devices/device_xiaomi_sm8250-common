@@ -41,8 +41,8 @@ Return<bool> AntiFlicker::isEnabled() {
 }
 
 Return<bool> AntiFlicker::setEnabled(bool enabled) {
-    if (!android::base::WriteStringToFile((enabled ? "0x40000" : "0x50000"), kDcDimmingPath)) {
-        LOG(ERROR) << "Failed to write " << kDcDimmingPath;
+    if (!android::base::WriteStringToFile((enabled ? "0xF00" : "0xE00"), kDcDimmingPath)) {
+        LOG(ERROR) << "Failed to write DIMMING / DIMMING_OFF" << kDcDimmingPath;
         return false;
     }
     return true;
