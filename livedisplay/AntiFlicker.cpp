@@ -31,6 +31,9 @@ namespace implementation {
 static constexpr const char* kDcDimmingPath =
     "/sys/class/drm/card0/card0-DSI-1/disp_param";
 
+static constexpr const char* kBrightnessPath =
+    "/sys/class/backlight/panel0-backlight/brightness";
+
 Return<bool> AntiFlicker::isEnabled() {
     std::string buf;
     if (!android::base::ReadFileToString(kDcDimmingPath, &buf)) {
@@ -41,9 +44,68 @@ Return<bool> AntiFlicker::isEnabled() {
 }
 
 Return<bool> AntiFlicker::setEnabled(bool enabled) {
-    if (!android::base::WriteStringToFile((enabled ? "0x40000" : "0x50000"), kDcDimmingPath)) {
-        LOG(ERROR) << "Failed to write " << kDcDimmingPath;
-        return false;
+    if (enabled) {
+        // Write DISPPARAM_DC_ON to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0x50000", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DC_ON to " << kDcDimmingPath;
+            return false;
+        }
+        // Write DISPPARAM_DIMMING_OFF to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0xE00", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DIMMING_OFF to " << kDcDimmingPath;
+            return false;
+        }
+        // Write DISPPARAM_DIMMING_ON to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0xF00", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DIMMING_ON to " << kDcDimmingPath;
+            return false;
+        }
+		
+        // Read the current value of the kBrightnessPath file
+        std::string brightness;
+        if (!android::base::ReadFileToString(kBrightnessPath, &brightness)) {
+            LOG(ERROR) << "Failed to read " << kBrightnessPath;
+            return false;
+        }
+
+        // Write the current value of the kBrightnessPath file back
+        if (!android::base::WriteStringToFile(brightness, kBrightnessPath)) {
+            LOG(ERROR) << "Failed to update the brightness node";
+            return false;
+        }
+    } else {
+        // Write DISPPARAM_DIMMING_OFF to the kDcDimmingPath file	
+        if (!android::base::WriteStringToFile("0xE00", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DIMMING_OFF to " << kDcDimmingPath;
+            return false;
+        }
+        // Write DISPPARAM_CRC_OFF to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0xF00000", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_CRC_OFF to " << kDcDimmingPath;
+            return false;
+        }
+        // Write DISPPARAM_DC_OFF to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0x50000", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DC_OFF to " << kDcDimmingPath;
+            return false;
+        }
+        // Write DISPPARAM_DIMMING_ON to the kDcDimmingPath file
+        if (!android::base::WriteStringToFile("0xF00", kDcDimmingPath)) {
+            LOG(ERROR) << "Failed to write DISPPARAM_DIMMING_ON to " << kDcDimmingPath;
+            return false;
+        }
+        // Read the current value of the kBrightnessPath file
+        std::string brightness;
+        if (!android::base::ReadFileToString(kBrightnessPath, &brightness)) {
+            LOG(ERROR) << "Failed to read " << kBrightnessPath;
+            return false;
+        }
+
+        // Write the current value of the kBrightnessPath file back
+        if (!android::base::WriteStringToFile(brightness, kBrightnessPath)) {
+            LOG(ERROR) << "Failed to update the brightness node";
+            return false;
+        }
     }
     return true;
 }
