@@ -243,6 +243,11 @@ DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
 ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
 
+ifeq ($(TARGET_USES_MIUI_DOLBY),true)
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+     $(COMMON_PATH)/dolby/manifests/dolby_framework_matrix.xml
+endif
+
 # Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
