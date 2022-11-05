@@ -1,0 +1,7 @@
+# Dolby Properties
+ro.vendor.dolby.dax.version            u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
+
+# Already Labeled in Pixel Experience Android 14 device/custom/sepolicy
+# ro.vendor.audio.dolby.dax.support	u:object_r:exported_system_prop:s0
