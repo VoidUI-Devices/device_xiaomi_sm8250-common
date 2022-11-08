@@ -11,3 +11,9 @@ vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:h
 
 # Sensors
 vendor.xiaomi.hardware.citsensorservice::ICitSensorService                    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
+
+# Sensors Service
+android.frameworks.sensorservice::ISensorManager                              u:object_r:fwk_sensor_hwservice:s0
+
+# Vibrator Feature
+vendor.xiaomi.hardware.vibratorfeature::IVibratorFeature            u:object_r:vendor_hal_vibratorfeature_hwservice:s0
