@@ -15,6 +15,14 @@
             <instance>slot2</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <version>1</version>
+        <interface>
+            <name>IVibrator</name>
+            <instance>vibratorfeature</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>com.qualcomm.qti.bluetooth_audio</name>
         <version>1.0</version>

@@ -1,0 +1,55 @@
+# Init Domain & Domain Name
+init_daemon_domain(hal_vibrator_default)
+
+# Allow call System Server
+allow hal_vibrator_default system_server:binder call;
+
+# Allow to read input devices
+allow hal_vibrator_default input_device:dir r_dir_perms;
+allow hal_vibrator_default input_device:chr_file rw_file_perms;
+
+# Vendor Data File
+allow hal_vibrator_default vendor_data_file:file { rw_file_perms create unlink };
+allow hal_vibrator_default vendor_data_file:dir { rw_file_perms add_name remove_name };
+
+# Vendor persist haptics file
+allow hal_vibrator_default vendor_persist_haptics_file:file { rw_file_perms create unlink };
+allow hal_vibrator_default vendor_persist_haptics_file:dir { rw_file_perms add_name remove_name };
+
+# Vendor persist sensors file
+allow hal_vibrator_default vendor_persist_sensors_file:file { rw_file_perms create unlink };
+allow hal_vibrator_default vendor_persist_sensors_file:dir { rw_file_perms add_name remove_name };
+
+# Vibrator: sysfs_leds nodes
+allow hal_vibrator_default sysfs_leds:dir r_dir_perms;
+allow hal_vibrator_default sysfs_leds:file rw_file_perms;
+
+# Vibrator: vendor/firmware_mnt access
+allow hal_vibrator_default firmware_file:dir r_dir_perms;
+allow hal_vibrator_default firmware_file:file r_file_perms;
+
+# Vibrator: vendor/firmware access
+allow hal_vibrator_default vendor_firmware_file:dir r_dir_perms;
+allow hal_vibrator_default vendor_firmware_file:file r_file_perms;
+
+# read-only permission to obtain the calibration data
+r_dir_file(hal_vibrator_default, vendor_persist_haptics_file)
+
+# Allow binder calls to sensors hal
+binder_call(hal_vibrator_default, hal_sensors_default)
+
+# Allow binder calls to vibrator hal
+binder_call(hal_vibrator_default, hal_vibrator_default)
+
+allow hal_vibrator_default {
+  mnt_vendor_file
+  persist_subsys_file
+  rootfs
+}:dir rw_dir_perms;
+
+allow hal_vibrator_default {
+  persist_subsys_file
+  sysfs
+  sysfs_leds
+}:file rw_file_perms;
+
