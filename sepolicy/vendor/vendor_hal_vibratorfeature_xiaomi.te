@@ -1,0 +1,80 @@
+# HwService declaration
+type vendor_hal_vibratorfeature_hwservice, hwservice_manager_type, protected_hwservice;
+
+# Domain
+type hal_vibratorfeature_default, domain;
+hal_server_domain(hal_vibratorfeature_default, hal_vibratorfeature_xiaomi)
+
+# Type of Execution
+type hal_vibratorfeature_default_exec, exec_type, vendor_file_type, file_type;
+
+# Init Domain & Domain Name
+init_daemon_domain(hal_vibratorfeature_default)
+
+# Attributes
+hal_attribute_hwservice(hal_vibratorfeature_xiaomi, vendor_hal_vibratorfeature_hwservice)
+
+# Client-Server calls
+binder_call(hal_vibratorfeature_xiaomi_client, hal_vibratorfeature_xiaomi_server)
+binder_call(hal_vibratorfeature_xiaomi_server, hal_vibratorfeature_xiaomi_client)
+
+# Allow vibrator to access Sensorservice
+allow hal_vibratorfeature_default fwk_sensor_hwservice:hwservice_manager find;
+
+# Allow call System Server
+allow hal_vibratorfeature_default system_server:binder call;
+
+# Allow to read input devices
+allow hal_vibratorfeature_default input_device:dir r_dir_perms;
+allow hal_vibratorfeature_default input_device:chr_file rw_file_perms;
+
+# HwService Manager add and find
+allow hal_vibratorfeature_default vendor_hal_vibratorfeature_hwservice:hwservice_manager add;
+allow hal_vibratorfeature_default vendor_hal_vibratorfeature_hwservice:hwservice_manager find;
+
+# Vendor Data File
+allow hal_vibratorfeature_default vendor_data_file:file { rw_file_perms create unlink };
+allow hal_vibratorfeature_default vendor_data_file:dir { rw_file_perms add_name remove_name };
+
+# Vendor persist haptics file
+allow hal_vibratorfeature_default vendor_persist_haptics_file:file { rw_file_perms create unlink };
+allow hal_vibratorfeature_default vendor_persist_haptics_file:dir { rw_file_perms add_name remove_name };
+
+# Vendor persist sensors file
+allow hal_vibratorfeature_default vendor_persist_sensors_file:file { rw_file_perms create unlink };
+allow hal_vibratorfeature_default vendor_persist_sensors_file:dir { rw_file_perms add_name remove_name };
+
+# VibratorFeature: sysfs_leds nodes
+allow hal_vibratorfeature_default sysfs_leds:dir r_dir_perms;
+allow hal_vibratorfeature_default sysfs_leds:file rw_file_perms;
+
+# VibratorFeature: vendor/firmware access
+allow hal_vibratorfeature_default vendor_firmware_file:dir r_dir_perms;
+allow hal_vibratorfeature_default vendor_firmware_file:file r_file_perms;
+
+# VibratorFeature: vendor/firmware_mnt access
+allow hal_vibratorfeature_default firmware_file:dir r_dir_perms;
+allow hal_vibratorfeature_default firmware_file:file r_file_perms;
+
+# read-only permission to obtain the calibration data
+allow hal_vibratorfeature_default vendor_persist_haptics_file:dir r_dir_perms;
+allow hal_vibratorfeature_default mnt_vendor_file:dir search;
+
+# Allow binder calls to sensors hal
+binder_call(hal_vibratorfeature_default, hal_sensors_default)
+
+# Allow binder calls to vibrator hal
+binder_call(hal_vibratorfeature_default, hal_vibrator_default)
+
+allow hal_vibratorfeature_default {
+  mnt_vendor_file
+  persist_subsys_file
+  rootfs
+}:dir rw_dir_perms;
+
+allow hal_vibratorfeature_default {
+  persist_subsys_file
+  sysfs
+  sysfs_leds
+}:file w_file_perms;
+
