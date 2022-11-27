@@ -4,3 +4,7 @@ allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+# Miui Sepolicy for Vendor Audio Files
+allow system_app vendor_audio_data_file:dir {write add_name search};
+allow system_app vendor_audio_data_file:file {read write create getattr append open};
