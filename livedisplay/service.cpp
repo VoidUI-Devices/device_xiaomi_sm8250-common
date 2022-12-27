@@ -22,13 +22,11 @@
 
 #include "AntiFlicker.h"
 #include "SunlightEnhancement.h"
-#include "livedisplay/sdm/SDMController.h"
 
 using android::OK;
 using android::sp;
 using android::status_t;
 
-using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
 using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
 using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
 using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
@@ -36,7 +34,6 @@ using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
 
 int main() {
     status_t status = OK;
-    std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
     sp<AntiFlicker> af = new AntiFlicker();
     sp<SunlightEnhancement> se = new SunlightEnhancement();
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
