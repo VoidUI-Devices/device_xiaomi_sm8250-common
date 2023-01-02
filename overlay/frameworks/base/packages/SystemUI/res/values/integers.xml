@@ -1,0 +1,8 @@
+<resources>
+	<integer name="config_burnInProtectionMaxVerticalOffset">0</integer>
+	<integer name="config_burnInProtectionMinHorizontalOffset">0</integer>
+	<integer name="config_burnInProtectionMinVerticalOffset">0</integer>
+	<integer name="config_shift_interval">20</integer>
+	<integer name="config_burnInProtectionMaxHorizontalOffset">0</integer>
+	<integer name="config_burnInProtectionMaxRadius">-1</integer>
+</resources>
