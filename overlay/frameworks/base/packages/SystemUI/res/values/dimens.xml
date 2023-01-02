@@ -1,0 +1,10 @@
+<resources>
+	<dimen name="horizontal_max_swift">6dp</dimen>
+	<dimen name="vertical_max_swift">6dp</dimen>
+	<dimen name="udfps_burn_in_offset_x">6dp</dimen>
+	<dimen name="udfps_burn_in_offset_y">6dp</dimen>
+	<dimen name="burn_in_prevention_offset_x">40dp</dimen>
+	<dimen name="burn_in_prevention_offset_y">40dp</dimen>
+	<dimen name="burn_in_prevention_offset_y_large_clock">40dp</dimen>
+	<dimen name="default_burn_in_prevention_offset">40dp</dimen>
+</resources>
