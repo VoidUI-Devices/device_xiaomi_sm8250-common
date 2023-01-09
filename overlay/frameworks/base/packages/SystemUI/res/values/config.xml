@@ -30,3 +30,24 @@
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
 </resources>
+
+<!-- The maximum offset in either direction that elements are moved horizontally to prevent
+         burn-in on AOD. -->
+    <dimen name="burn_in_prevention_offset_x">8dp</dimen>
+
+    <!-- The maximum offset in either direction that elements are moved vertically to prevent
+         burn-in on AOD. -->
+    <dimen name="burn_in_prevention_offset_y">50dp</dimen>
+
+    <!-- The maximum offset in either direction that elements are moved vertically to prevent
+         burn-in on AOD. -->
+    <dimen name="burn_in_prevention_offset_y_clock">42dp</dimen>
+
+    <!-- The maximum offset in either direction that icons move to prevent burn-in on AOD. -->
+    <dimen name="default_burn_in_prevention_offset">15dp</dimen>
+
+    <!-- The maximum offset for the under-display fingerprint sensor (UDFPS) icon in either
+         direction that elements are moved to prevent burn-in on AOD-->
+    <dimen name="udfps_burn_in_offset_x">7px</dimen>
+    <dimen name="udfps_burn_in_offset_y">20px</dimen>
+
