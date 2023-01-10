@@ -113,20 +113,17 @@
         <!--DOLBY END-->
     </effects>
     <postprocess>
+        <stream type="system">
+        </stream>
         <stream type="music">
-            <apply effect="music_helper"/>
         </stream>
         <stream type="ring">
-            <apply effect="ring_helper"/>
         </stream>
         <stream type="alarm">
-            <apply effect="alarm_helper"/>
         </stream>
         <stream type="voice_call">
-            <apply effect="voice_helper"/>
         </stream>
         <stream type="notification">
-            <apply effect="notification_helper"/>
         </stream>
     </postprocess>
     <preprocess>
