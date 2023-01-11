@@ -64,3 +64,10 @@
         <item>org.lineageos.aperture.dev</item>
     </string-array>
 </resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<bool name="config_enableBurnInProtection">true</bool>
+	<bool name="config_enableSmartPixels">true</bool>
+	<bool name="config_statusBarBurnInProtection">true</bool>
+        <bool name="config_disableStatusBarBurnInProtection">true</bool>
+</resources>
