@@ -64,3 +64,4 @@
         <item>org.lineageos.aperture.dev</item>
     </string-array>
 </resources>
+<bool name="config_disableStatusBarBurnInProtection">true</bool>
