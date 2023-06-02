@@ -1190,6 +1190,8 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
             <item value="2" /> 
         </int-array>
+        <!-- PA: Enable VoNR on Jio -->
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="440" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
