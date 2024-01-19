@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 VoidUI Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+     <!-- Color mode -->
+     <string name="color_mode_option_natural">Natural</string>
+     <string name="color_mode_option_boosted">Boosted</string>
+     <string name="color_mode_option_automatic">Automatic</string>
+     <string name="color_mode_option_vivid">Vivid</string>
+     <string name="color_mode_option_original">Original</string>
+     <string name="color_mode_option_p3">P3</string>
+     <string name="color_mode_option_srgb">sRGB</string>
+</resources>

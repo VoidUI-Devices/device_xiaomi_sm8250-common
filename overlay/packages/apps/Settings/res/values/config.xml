@@ -35,13 +35,13 @@
          config_color_mode_options_values below. Only the values that also appear in
          frameworks/base/core/res/res/values/config.xml's config_availableColorModes are shown. -->
     <string-array name="config_color_mode_options_strings" translatable="false">
-        <item>Natural</item>
-        <item>Boosted</item>
-        <item>Automatic</item>
-        <item>Vivid</item>
-        <item>Original</item>
-        <item>P3</item>
-        <item>sRGB</item>
+        <item>@string/color_mode_option_natural</item>
+        <item>@string/color_mode_option_boosted</item>
+        <item>@string/color_mode_option_automatic</item>
+        <item>@string/color_mode_option_vivid</item>
+        <item>@string/color_mode_option_original</item>
+        <item>@string/color_mode_option_p3</item>
+        <item>@string/color_mode_option_srgb</item>
     </string-array>
 
     <!-- Display settings screen, Color mode options. Must be the same length and order as
