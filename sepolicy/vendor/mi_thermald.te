@@ -14,6 +14,15 @@ r_dir_file(mi_thermald, sysfs_devices_system_cpu)
 r_dir_file(mi_thermald, vendor_sysfs_graphics)
 r_dir_file(mi_thermald, vendor_sysfs_kgsl)
 r_dir_file(mi_thermald, sysfs_leds)
+
+# Allow mi_thermald to manage own process
+allow mi_thermald self:capability {
+  chown
+  fowner
+  fsetid
+};
+
+# Allow mi_thermald to access thermal sysfs
 r_dir_file(mi_thermald, sysfs_thermal)
 
 # Allow mi_thermald to read and write to sysfs_*
@@ -23,9 +32,13 @@ allow mi_thermald {
   vendor_sysfs_graphics
   vendor_sysfs_kgsl
   sysfs_thermal
+  sysfs_leds
 }:{
   file
   lnk_file
 } rw_file_perms;
 
 set_prop(mi_thermald, vendor_thermal_normal_prop)
+
+# Allow mi_thermald to create wakelock
+wakelock_use(mi_thermald)
