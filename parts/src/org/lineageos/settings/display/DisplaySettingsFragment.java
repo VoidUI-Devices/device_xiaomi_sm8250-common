@@ -69,7 +69,7 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
             FileUtils.writeLine(DC_DIMMING_NODE, (Boolean) newValue ? "1":"0");
         }
         if (HBM_ENABLE_KEY.equals(preference.getKey())) {
-            FileUtils.writeLine(HBM_NODE, (Boolean) newValue ? "0x10000" : "0xF0000");
+            FileUtils.writeLine(HBM_NODE, (Boolean) newValue ? "1" : "0");
         }
         return true;
     }
