@@ -155,6 +155,24 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/clear_speaker_summary" />
         </activity>
+
+        <activity
+            android:name=".display.DisplaySettingsActivity"
+            android:label="@string/display_settings_title"
+            android:exported="false"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/display_settings_summary" />
+        </activity>
+
     </application>
 
 </manifest>
